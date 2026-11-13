@@ -32,9 +32,9 @@ button { font:inherit; color:inherit; }
 .btn:hover { border-color:var(--cyan); box-shadow:0 0 16px #00e5ff44; }
 .btn:disabled { opacity:.5; cursor:default; }
 .btn.block { width:100%; }
-.btn-soft { background:transparent; border:1px solid var(--border); color:var(--dim); font-family:ui-monospace,Menlo,monospace;
+.btn-soft { background:transparent; border:1px solid #2c3354; color:#9aa3c7; font-family:ui-monospace,Menlo,monospace;
   font-size:12px; padding:9px 6px; border-radius:8px; cursor:pointer; flex:1 1 0; min-width:0; }
-.btn-soft:hover { border-color:var(--dim); color:var(--text); }
+.btn-soft:hover { border-color:var(--dim); color:#fff; }
 .btn-soft:active { background:var(--surface2); }
 details { background:var(--surface); border:1px solid var(--border); border-radius:10px; margin-bottom:12px; }
 summary { padding:14px 16px; cursor:pointer; font-size:14px; list-style:none; }
@@ -126,8 +126,10 @@ td.a { white-space:normal; color:var(--dim); min-width:120px; }
         <label class="lbl" for="monto">Monto ($)</label>
         <input id="monto" type="number" inputmode="numeric" min="0" step="500" placeholder="0" value="0">
         <div class="row">
+          <button class="btn-soft" data-paso="-1000">-1000</button>
           <button class="btn-soft" data-paso="-500">-500</button>
           <button class="btn-soft" data-paso="500">+500</button>
+          <button class="btn-soft" data-paso="1000">+1000</button>
           <button class="btn-soft" data-paso="10000">+10000</button>
         </div>
         <label class="lbl" for="aclar">Aclaraciones (opcional)</label>
